@@ -20,9 +20,9 @@ Runs both client and server.
 
 Runs the app in the development mode.
 
-##### `Open [http://localhost:5000](http://localhost:5000) to view the GraphiQL interface and interact with the apis.`
+##### Open [http://localhost:5000](http://localhost:5000) to view the GraphiQL interface and interact with the apis.
 
-##### `Open [http://localhost:3000](http://localhost:3000) to view the application in the browser.`
+##### Open [http://localhost:3000](http://localhost:3000) to view the application in the browser.
 
 ## Trading Enabled Key
 
