@@ -28,6 +28,22 @@ Runs the app in the development mode.
 
 - Shows which companies are currently enabled for trading and which ones are not (for e.g. BKCH is not enabled for trading).
 
+## Sample GraphQL Query for use in GraphiQL
+```
+ {
+  batch(symbol:"AMZN") {
+    company {
+      companyName
+    }
+    quote{
+      calculationPrice
+    }
+    logo{
+      url
+    }
+  }
+}
+```
 ##### The page will reload if you make edits as we use nodemon to watch for changes.
 
 ##### You will also see any lint errors in the console.
