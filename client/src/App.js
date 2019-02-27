@@ -7,8 +7,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import IEXSymbols from "./components/IEXSymbols";
 
 //  all queries are accessed by this url and graphql does the heavy lifting from there.
+let uri = "";
+if (process.env.NODE_ENV === "production") {
+  uri = "/graphql";
+} else {
+  uri = "http://localhost:5000/graphql";
+}
 const client = new ApolloClient({
-  uri: "/graphql"
+  uri: uri
 });
 
 class App extends Component {
