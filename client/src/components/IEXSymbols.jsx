@@ -46,11 +46,14 @@ export class IEXSymbols extends Component {
           {({ loading, error, data }) => {
             if (loading) return <h4>Loading.....</h4>;
             if (error) console.log(error);
-            const options = data.symbols.map(iexSymbol => ({
-              value: iexSymbol.symbol,
-              label: iexSymbol.symbol,
-              symbol: iexSymbol
-            }));
+            let options = [];
+            if (data) {
+              options = data.symbols.map(iexSymbol => ({
+                value: iexSymbol.symbol,
+                label: iexSymbol.symbol,
+                symbol: iexSymbol
+              }));
+            }
             return (
               <Fragment>
                 <div className="symbol-select my-3">
