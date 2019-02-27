@@ -8,7 +8,7 @@ import IEXSymbols from "./components/IEXSymbols";
 
 //  all queries are accessed by this url and graphql does the heavy lifting from there.
 const client = new ApolloClient({
-  uri: "http://localhost:5000/graphql"
+  uri: "/graphql"
 });
 
 class App extends Component {
